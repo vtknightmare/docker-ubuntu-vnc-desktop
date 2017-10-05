@@ -8,7 +8,6 @@ RUN sed -i 's#http://archive.ubuntu.com/#' /etc/apt/sources.list
 # built-in packages
 RUN apt-get update \
     && apt-get install -y --no-install-recommends software-properties-common curl \
-    && add-apt-repository ppa:fcwu-tw/ppa \
     && apt-get update \
     && apt-get install -y --no-install-recommends --allow-unauthenticated \
         supervisor \
